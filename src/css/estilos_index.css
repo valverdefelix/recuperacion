@@ -1,0 +1,192 @@
+/* Estilos index */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Cambria', 'Cochin', Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilo encabezado */
+
+.encabezado {
+    width: 100%;
+    overflow: hidden;
+}
+
+.encabezado img {
+    float: left;
+    width: 10%;
+    margin: 0.5%;
+}
+
+.encabezado h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5vw;
+    text-align: left;
+    color: #000000;
+    letter-spacing: 1px;
+    padding: 2% 7%;
+}
+
+.encabezado nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #40284F;
+}
+
+.encabezado a {
+    font-family: 'Cambria', 'Cochin', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    flex: 1 0 150px; /* Flex grow and shrink */
+}
+
+.encabezado a:hover {
+    background-color: #ed66d9;
+}
+
+/* Estilos contenido Banner */
+
+.banner {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 60%;
+}
+
+/* Galeria de servicios */
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.columna {
+    flex: 1 1 21%; /* Flex grow, shrink, basis */
+    margin: 1%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.galeria {
+    border-radius: 5%;
+    background-color: #40284F;
+    padding: 5%;
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    margin-top: 5%;
+}
+
+.desc p {
+    font-size: 1rem; /* Adjusted to be more flexible */
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.galeria:hover {
+    background-color: #ed66d9;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .columna {
+        flex: 1 1 45%;
+    }
+
+    .encabezado h1 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .columna {
+        flex: 1 1 100%;
+    }
+
+    .encabezado img {
+        width: 15%;
+    }
+
+    .encabezado h1 {
+        font-size: 5vw;
+        padding: 2% 4%;
+    }
+
+    .encabezado nav {
+        flex-direction: column;
+    }
+
+    .encabezado a {
+        font-size: 4vw;
+        padding: 1em 0;
+    }
+
+    .banner img {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .encabezado img {
+        width: 20%;
+    }
+
+    .encabezado h1 {
+        font-size: 6vw;
+    }
+
+    .encabezado a {
+        font-size: 5vw;
+    }
+
+    .desc p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilos para footer */
+
+.footer table {
+    width: 100%;
+    height: 140px;
+    background-color: #40284F;
+    padding: 1%;
+}
+
+.footer td {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8vw;
+}

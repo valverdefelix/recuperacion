@@ -1,0 +1,222 @@
+/* Estilos index */
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/* Estilo encabezado*/
+
+.top{
+    max-width: 100%;
+}
+
+.encabezado{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.encabezado img{
+    float: left;
+    width: 6%;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+}
+
+.encabezado h1{
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5vw;
+    text-align: left;
+    color: #000000;
+    letter-spacing: 1px;
+    padding: 2% 7%;
+}
+
+.encabezado nav{
+    max-width: 100%;
+    margin: 0%;
+    overflow: hidden;
+    background-color: #40284F;
+}
+
+.encabezado a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-size: 1.2vw;
+    text-decoration: none;
+    float: left;
+    padding: 2% 2%;
+    color: #ffff;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+.encabezado a:hover{
+    background-color: #ed66d9;
+}
+
+.clearflix:hover{
+    content: "";
+    display: table;
+}
+
+.galeria:hover{
+	background-color: #ed66d9;
+}
+
+.clearflix::after{
+    content: "";
+    display: table;
+}
+
+/*Estilos para footer*/
+
+.footer table{
+	width: 100%;
+	height: 140px;
+    background-color:#40284F;
+	align-content: center;
+    padding: 1%;
+}
+
+.footer td{
+    text-align: center;
+    font-family: serif;
+    color: #ffff;
+}
+
+h2{
+    color: #E0DF60;
+    font-size: 2.4vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*Estilo pagina*/
+
+.titulo{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.nosotros{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.nosotros img{
+    width: 40%;
+    border-radius: 50%;
+    border: solid 5px white;
+}
+
+.contenedor-textos{
+
+    padding: 5%;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+}
+
+.nosotros span{
+    margin: 1%;
+}
+
+.nosotros p{
+    margin: 5%;
+}
+
+/*Estilo página servicios*/
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.service {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    background-color: #feefff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #272727;
+    margin-bottom: 10px;
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.service ul li {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #666;
+}
+
+.service img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #272727;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .service {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    .service {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .service img {
+        margin: 0 auto 10px;
+    }
+}

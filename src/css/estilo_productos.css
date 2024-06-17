@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffff;
+}
+
+/* Estilo encabezado*/
+
+.encabezado{
+    max-width: 100%;
+    overflow: hidden;
+    background-color:#ffff;
+}
+
+.encabezado img{
+    float: left;
+    width: 6%;
+}
+
+.encabezado h1{
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #272727;
+    letter-spacing: 1px;
+    padding: 2%;
+}
+
+.encabezado nav{
+    max-width: 100%;
+    margin: 0%;
+    overflow: hidden;
+    background-color: #33105d;
+}
+
+.encabezado a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    float: left;
+    padding: 2% 3%;
+    color: #ffff;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+.encabezado a:hover{
+    background-color: #723185;
+}
+
+.clearflix:hover{
+    content: "";
+    display: table;
+}
+
+.galeria:hover{
+	border: 20 px solid #ccc;
+	background-color: #33105d;
+}
+
+.clearflix::after{
+    content: "";
+    display: table;
+}
+
+/*Estilo para galeria de productos*/
+
+.filtro
+{
+	background: #fff;
+	font-family: 'Lobster', cursive;
+	font-family: 'Marck Script', cursive;
+}
+
+.caja
+{
+	max-width: 1400px;
+	width: 90%;
+	margin: auto;
+}
+
+.caja > h1
+{
+	color: #494B4D;
+	font-weight: 400px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.caja > h1:after 
+{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+
+.tienda-caja
+{
+	display: flex;
+}
+
+.lista-categoria
+{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+}
+
+.lista-categoria .categoria-item
+{
+	background-image: linear-gradient(to right, #fceabb 0%, #f8b500  51%, #fceabb  100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	transition: 0.5s;
+	background-size: 200% auto;
+	font-family: 'Lobster', cursive;
+	font-family: 'Marck Script', cursive;
+	color: white;            
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+}
+
+.lista-categoria .categoria-item: hover
+{
+	background-position: right center; 
+	color: #fff;
+	text-decoration: none;         
+}
+
+.lista-categoria .ct_item-active
+{
+	background: #000;
+}
+
+.categoria-item
+{
+	font-size: 20px;
+}
+
+.lista-productos
+{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.producto-imagen
+{
+	width: 330px;
+	height: 220px;
+}
+
+
+.lista-productos .producto-item
+{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+}
+
+.lista-productos .producto-item img 
+{
+	width: 100%;
+}
+
+.lista-productos .producto-item a
+{
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	background: #000;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
+.footer table{
+	width: 100%;
+	height: 140px;
+    background-color: #33105d;
+	align-content: center;
+    padding: 1%;
+}
+
+.footer td{
+    text-align: center;
+    font-family: serif;
+    color: #ffff;
+}
